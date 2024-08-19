@@ -1,13 +1,39 @@
+
 .footer {
     background-color: #ca6702;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 8px;
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 0.9rem; 
 }
 
 .footer p {
     margin: 0;
+    word-wrap: break-word; 
+}
+
+
+@media (min-width: 375px) {
+    .footer {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+
+@media (min-width: 640px) {
+    .footer {
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer {
+        padding: 20px;
+        font-size: 1.2rem;
+    }
 }

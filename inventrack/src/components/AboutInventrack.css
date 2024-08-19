@@ -1,0 +1,86 @@
+/* src/components/AboutInventrack.css */
+
+h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #555;
+  margin-top: 30px;
+}
+
+p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 1em;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+strong {
+  color: #000;
+}
+
+ol {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+ol li {
+  font-size: 1em;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  p, li, ol li {
+    font-size: 0.9em;
+  }
+
+  ul, ol {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.2em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  p, li, ol li {
+    font-size: 0.8em;
+  }
+
+  ul, ol {
+    margin-left: 10px;
+  }
+}

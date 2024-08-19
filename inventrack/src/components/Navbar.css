@@ -11,6 +11,7 @@
     padding: 0; /* Remove default padding */
     display: flex; /* Display items in a row */
     justify-content: space-around; /* Space out menu items evenly */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
 .navbar-menu li {
@@ -28,4 +29,43 @@
 .navbar-menu a:hover {
     background-color: #555; /* Slightly lighter background on hover */
     border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Responsive design for smaller screens */
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .navbar-menu li {
+        margin-bottom: 10px; /* Add some space between items */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px 10px; /* Reduce padding on smaller screens */
+    }
+
+    .navbar-menu a {
+        padding: 8px 12px; /* Adjust padding for smaller links */
+        font-size: 14px; /* Adjust font size for better readability */
+    }
+}
+
+@media (max-width: 320px) {
+    .navbar-menu {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .navbar-menu a {
+        padding: 6px 10px; /* Adjust padding for very small screens */
+        font-size: 12px; /* Smaller font size for very small screens */
+    }
+
+    .navbar-menu li {
+        margin-bottom: 8px; /* Add spacing between items */
+    }
 }

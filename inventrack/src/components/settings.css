@@ -4,11 +4,11 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    /* background-color: rgba(226, 176, 37, 0.329); */
 }
 
 .settings-buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background-color: #f4f4f4;
     padding: 10px;
@@ -26,6 +26,7 @@
     transition: background-color 0.3s;
     display: flex;
     align-items: center;
+    margin: 5px;
 }
 
 .settings-buttons button i {
@@ -99,13 +100,14 @@
     color: #28a745;
     margin-top: 10px;
 }
+
 .admin-auth-prompt {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
-    height: 100vh; /* Full viewport height */
-    text-align: center; /* Center text */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
     padding: 20px;
 }
 
@@ -118,8 +120,8 @@
 }
 
 .admin-auth-prompt button {
-    background-color: #17a2b8; /* Primary color */
-    color: white; /* Text color */
+    background-color: #17a2b8;
+    color: white;
     border: none;
     border-radius: 4px;
     padding: 10px 20px;
@@ -129,9 +131,64 @@
 }
 
 .admin-auth-prompt button:hover {
-    background-color: #138496; /* Darker shade on hover */
+    background-color: #138496;
 }
 
 .admin-auth-prompt button:focus {
-    outline: none; /* Remove default focus outline */
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .settings-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .settings-buttons button {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .settings-content {
+        padding: 10px;
+    }
+
+    .login-signup-form {
+        padding: 15px;
+        box-shadow: none;
+    }
+
+    .login-signup-form h2 {
+        font-size: 20px;
+    }
+
+    .login-signup-form button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .settings-buttons button {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .login-signup-form h2 {
+        font-size: 18px;
+    }
+
+    .login-signup-form .form-group label {
+        font-size: 14px;
+    }
+
+    .login-signup-form .form-group input,
+    .login-signup-form .form-group select {
+        padding: 6px;
+    }
+
+    .login-signup-form button {
+        padding: 8px;
+    }
 }

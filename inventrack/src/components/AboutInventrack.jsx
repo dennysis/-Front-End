@@ -1,4 +1,5 @@
 import React from 'react';
+import './AboutInventrack.css';
 
 const AboutInventrack = () => {
     return (

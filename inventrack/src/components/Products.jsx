@@ -34,7 +34,7 @@ const Product = () => {
     const handleCategoryChange = async (e) => {
         setSelectedCategory(e.target.value);
         try {
-            const response = await axios.get(`http://127.0.0.1:5555/categories/${e.target.value}/products`);
+            const response = await axios.get(`https://backend-ea00.onrender.com/categories/${e.target.value}/products`);
             setProducts(response.data);
         } catch (error) {
             console.error('Error fetching products by category:', error);

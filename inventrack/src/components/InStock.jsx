@@ -11,7 +11,7 @@ export default function Instock() {
   useEffect(() => {
     const getItems = async () => {
       try {
-        const res = await fetch("http://127.0.0.1:5555/products");
+        const res = await fetch("https://backend-ea00.onrender.com/products");
         const data = await res.json();
         if (!res.ok) {
           throw new Error(data);
@@ -27,7 +27,7 @@ export default function Instock() {
 
     const fetchCategories = async () => {
       try {
-        const res = await fetch("http://127.0.0.1:5555/categories");
+        const res = await fetch("https://backend-ea00.onrender.com/categories");
         const data = await res.json();
         if (!res.ok) {
           throw new Error(data);

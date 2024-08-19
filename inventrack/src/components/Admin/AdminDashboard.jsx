@@ -24,10 +24,10 @@ const AdminDashboard = () => {
       try {
         // Fetch statistics data
         const [bestSellerLast7DaysResponse, totalRevenueResponse, totalSaleReturnResponse, totalPurchaseResponse] = await Promise.all([
-          axios.get("http://127.0.0.1:5555/best_seller_last_7_days"),
-          axios.get("http://127.0.0.1:5555/total_revenue"),
-          axios.get("http://127.0.0.1:5555/total_sale_return"),
-          axios.get("http://127.0.0.1:5555/total_purchase"),
+          axios.get("https://backend-ea00.onrender.com/best_seller_last_7_days"),
+          axios.get("https://backend-ea00.onrender.com/total_revenue"),
+          axios.get("https://backend-ea00.onrender.com/total_sale_return"),
+          axios.get("https://backend-ea00.onrender.com/total_purchase"),
         ]);
 
         setData({

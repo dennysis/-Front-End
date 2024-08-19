@@ -33,7 +33,7 @@ const Login = ({setIsAuthenticated}) => {
 
       if (isLogin) {
         response = await axios.post(
-          'http://localhost:5555/login',
+          'https://backend-ea00.onrender.com/login',
           { email: formData.email, password: formData.password },
           {
             withCredentials: true, // Ensures cookies are sent and stored
@@ -43,7 +43,7 @@ const Login = ({setIsAuthenticated}) => {
 
       } else {
         response = await axios.post(
-          'http://localhost:5555/signup',
+          'https://backend-ea00.onrender.com/signup',
           {
             name: formData.name,
             email: formData.email,

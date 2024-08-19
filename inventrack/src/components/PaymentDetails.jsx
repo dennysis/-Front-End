@@ -31,7 +31,7 @@ const PaymentDetails = () => {
         setSuccess('');
 
         try {
-            const response = await axios.post('http://127.0.0.1:5555/payment', {
+            const response = await axios.post('https://backend-ea00.onrender.com/payment', {
                 inventory_id: inventoryId, // Corrected variable name
                 amount: parseFloat(amount),
                 payment_date: paymentDate,

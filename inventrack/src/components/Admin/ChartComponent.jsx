@@ -9,10 +9,10 @@ const ChartComponent = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const salesResponse = await fetch('http://127.0.0.1:5555/sales_data');
+        const salesResponse = await fetch('https://backend-ea00.onrender.com/sales_data');
         const salesData = await salesResponse.json();
 
-        const profitLossResponse = await fetch('http://127.0.0.1:5555/profit_loss_data'); 
+        const profitLossResponse = await fetch('https://backend-ea00.onrender.com/profit_loss_data'); 
         const profitLossData = await profitLossResponse.json();
 
         const labels = salesData.map(item => item.date);

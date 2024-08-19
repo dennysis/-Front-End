@@ -45,7 +45,7 @@ const ClarkProduct = () => {
     
         setSelectedCategory(selectedCategoryId);
         try {
-            const response = await axios.get(`http://127.0.0.1:5555/categories/${selectedCategoryId}/products`);
+            const response = await axios.get(`https://backend-ea00.onrender.com/categories/${selectedCategoryId}/products`);
             console.log('Fetched Products:', response.data); // Debugging
     
             setProducts(response.data);
@@ -79,7 +79,7 @@ const ClarkProduct = () => {
             const formData = new FormData();
             formData.append('file', newProduct.image_file);
             try {
-                const imageResponse = await axios.post('http://127.0.0.1:5555/upload_image', formData, {
+                const imageResponse = await axios.post('https://backend-ea00.onrender.com/upload_image', formData, {
                     headers: {
                         'Content-Type': 'multipart/form-data'
                     }

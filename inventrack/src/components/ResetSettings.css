@@ -1,0 +1,89 @@
+/* Add these styles to ResetSettings.css */
+
+.reset-settings-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.reset-settings-container h2 {
+    margin-bottom: 10px;
+}
+
+.reset-settings-container p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.reset-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.reset-button:hover {
+    background-color: #c82333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.modal h2 {
+    margin-top: 0;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.confirm-button, .cancel-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+.cancel-button {
+    background-color: #6c757d;
+}
+
+.confirm-button:hover {
+    background-color: #0056b3;
+}
+
+.cancel-button:hover {
+    background-color: #5a6268;
+}

@@ -1,0 +1,52 @@
+/* src/App.css */
+
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+html{
+    background-color: rgba(226, 176, 37, 0.329);
+    height: auto;
+}
+
+body>*{
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: rgba(226, 176, 37, 0.329);
+    height: auto;
+}
+
+body.dark {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.small {
+    font-size: 12px;
+}
+
+body.medium {
+    font-size: 16px;
+}
+
+body.large {
+    font-size: 20px;
+}
+
+/* General styles */
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.font-size-controls button {
+    margin-right: 5px;
+}

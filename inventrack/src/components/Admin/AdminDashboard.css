@@ -1,0 +1,80 @@
+/* src/components/Admin/AdminDashboard.css */
+
+.admin-dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.admin-dashboard h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.admin-nav {
+  margin-bottom: 20px;
+}
+
+.admin-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.admin-button:hover {
+  background-color: #0056b3;
+}
+
+.admin-actions {
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  margin-bottom: 20px;
+}
+
+.chart-container h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.statistics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+  min-width: 220px;
+}
+
+.card h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 18px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .statistics {
+    flex-direction: column;
+  }
+}

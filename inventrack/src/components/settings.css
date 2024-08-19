@@ -1,0 +1,137 @@
+/* settings.css */
+
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* background-color: rgba(226, 176, 37, 0.329); */
+}
+
+.settings-buttons {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.settings-buttons button {
+    background-color: #ffbb00ab;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.settings-buttons button i {
+    margin-right: 8px;
+}
+
+.settings-buttons button:hover {
+    background-color: #ebae08;
+}
+
+.settings-content {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(226, 176, 37, 0.329);
+}
+
+.login-signup-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fafafa;
+}
+
+.login-signup-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.login-signup-form .form-group {
+    margin-bottom: 15px;
+}
+
+.login-signup-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-signup-form .form-group input,
+.login-signup-form .form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-signup-form button {
+    background-color: #d6860d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.login-signup-form button:hover {
+    background-color: #cf1e07;
+}
+
+.error-message {
+    color: #dc3545;
+    margin-top: 10px;
+}
+
+.success-message {
+    color: #28a745;
+    margin-top: 10px;
+}
+.admin-auth-prompt {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center text */
+    padding: 20px;
+}
+
+.admin-auth-prompt h2 {
+    margin-bottom: 20px;
+}
+
+.admin-auth-prompt p {
+    margin-bottom: 20px;
+}
+
+.admin-auth-prompt button {
+    background-color: #17a2b8; /* Primary color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-auth-prompt button:hover {
+    background-color: #138496; /* Darker shade on hover */
+}
+
+.admin-auth-prompt button:focus {
+    outline: none; /* Remove default focus outline */
+}

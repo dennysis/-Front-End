@@ -1,0 +1,31 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #333; /* Dark background for the navbar */
+    padding: 10px 20px; /* Space around the navbar */
+}
+
+.navbar-menu {
+    list-style-type: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Display items in a row */
+    justify-content: space-around; /* Space out menu items evenly */
+}
+
+.navbar-menu li {
+    margin: 0; /* Remove default margin */
+}
+
+.navbar-menu a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 15px; /* Space around the text */
+    font-weight: bold; /* Make text bold */
+    display: block; /* Make the link a block element to make the padding work */
+}
+
+.navbar-menu a:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}

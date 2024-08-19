@@ -1,0 +1,36 @@
+/* src/components/Admin/PaymentStatus.css */
+.payment-status {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.payment-status table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.payment-status th,
+.payment-status td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.payment-status th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.payment-status tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.payment-status tr:hover {
+  background-color: #f1f1f1;
+}
+.h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}

@@ -1,0 +1,61 @@
+/* src/components/Admin/SupplyRequest.css */
+.supply-request {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .supply-request h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .supply-request table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .supply-request th,
+  .supply-request td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .supply-request th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .supply-request tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .supply-request tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .supply-request button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    margin: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .supply-request button:hover {
+    background-color: #0056b3;
+  }
+  
+  .supply-request button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
